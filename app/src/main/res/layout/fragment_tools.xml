@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/text_tools"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/profile">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/settings_profile_image"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/settings_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:hint="Phone Number"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/settings_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_phone_number"
+        android:hint="Full Name"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/settings_vehicle_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_full_name"
+        android:hint="Owned Vehicle Number"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/update_account_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="81dp"
+        android:background="@drawable/button_background_3"
+        android:padding="12sp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"/>
+</RelativeLayout>
